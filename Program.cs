@@ -1,5 +1,7 @@
-﻿using ConsoleApp.Factories;
+﻿using ConsoleApp.Decorators;
+using ConsoleApp.Factories;
 using ConsoleApp.Interfaces;
+using ConsoleApp.Models;
 
 class Program
 {
@@ -17,5 +19,17 @@ class Program
 
 		ICar car2 = factory.CreateCar("suv");
 		car2.Drive();
+
+		ICoffee coffee = new SimpleCoffee();
+		Console.WriteLine(coffee.GetDescription());
+		Console.WriteLine(coffee.GetCost());
+
+		coffee = new MilkDecorator(coffee);
+		Console.WriteLine(coffee.GetDescription());
+		Console.WriteLine(coffee.GetCost());
+
+		coffee = new SugarDecorator(coffee);
+		Console.WriteLine(coffee.GetDescription());
+		Console.WriteLine(coffee.GetCost());
 	}
 }
