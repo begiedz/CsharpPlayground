@@ -1,15 +1,21 @@
-﻿using ConsoleApp.Classes;
+﻿using ConsoleApp.Factories;
+using ConsoleApp.Interfaces;
 
 class Program
 {
 	static void Main(string[] args)
 	{
-		// Student student1 = new("Dariusz", "Begiedza", 27);
-		// student1.Greet("Marcin");
-
-		// student1.Name = "elo";
-		// student1.Greet("Marek");
 		Logger logger = Logger.GetInstance();
+
+		ICarFactory factory = new CarFactory();
+		// CarFactory factory = new();
+
 		logger.Log("Hello!");
+
+		ICar car1 = factory.CreateCar("sedan");
+		car1.Drive();
+
+		ICar car2 = factory.CreateCar("suv");
+		car2.Drive();
 	}
 }
