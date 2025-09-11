@@ -4,10 +4,12 @@ class Program
 {
 	static void Main(string[] args)
 	{
-		Student student1 = new("Dariusz", "Begiedza", 27);
-		student1.Greet("Marcin");
+		// Student student1 = new("Dariusz", "Begiedza", 27);
+		// student1.Greet("Marcin");
 
-		student1.Name = "elo";
-		student1.Greet("Marek");
+		// student1.Name = "elo";
+		// student1.Greet("Marek");
+		Logger logger = Logger.GetInstance();
+		logger.Log("Hello!");
 	}
 }
