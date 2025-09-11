@@ -6,7 +6,7 @@
  */
 public class Logger
 {
-    private static Logger _instance;
+    private static Logger? _instance;
     private Logger() { } // private constructor
 
     public static Logger GetInstance()
