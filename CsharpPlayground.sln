@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{DE15F68F-3D55-4800-88BD-16D1FA83321D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoPizza", "ContosoPizza\ContosoPizza.csproj", "{A202A899-9F0E-4081-B9E5-43FFE3121291}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{DE15F68F-3D55-4800-88BD-16D1FA83321D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE15F68F-3D55-4800-88BD-16D1FA83321D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE15F68F-3D55-4800-88BD-16D1FA83321D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A202A899-9F0E-4081-B9E5-43FFE3121291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A202A899-9F0E-4081-B9E5-43FFE3121291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A202A899-9F0E-4081-B9E5-43FFE3121291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A202A899-9F0E-4081-B9E5-43FFE3121291}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
